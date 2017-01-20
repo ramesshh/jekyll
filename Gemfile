@@ -25,7 +25,7 @@ group :test do
   gem "nokogiri"
   gem "rspec"
   gem "rspec-mocks"
-  gem "rubocop", "~> 0.44.1"
+  gem "rubocop", "~> 0.47"
   gem "test-theme", :path => File.expand_path("./test/fixtures/test-theme", File.dirname(__FILE__))
 
   gem "jruby-openssl" if RUBY_ENGINE == "jruby"
@@ -69,7 +69,7 @@ group :jekyll_optional_dependencies do
   gem "jekyll-redirect-from"
   gem "kramdown", "~> 1.9"
   gem "mime-types", "~> 3.0"
-  gem "rdoc", "~> 4.2"
+  gem "rdoc", "~> 5.0"
   gem "toml", "~> 0.1.0"
 
   platform :ruby, :mswin, :mingw, :x64_mingw do
@@ -88,12 +88,12 @@ end
 
 group :site do
   if ENV["PROOF"]
-    gem "html-proofer", "~> 2.0"
+    gem "html-proofer", "~> 3.4"
   end
 
   gem "jekyll-avatar"
   gem "jekyll-mentions"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
-  gem "jemoji", "0.5.1"
+  gem "jemoji"
 end
